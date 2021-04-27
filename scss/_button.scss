@@ -1,0 +1,40 @@
+$btn-bg: #2d31e9;
+$btn-bg-hover: #2dbeeb;
+$btn-color: #f6f6f6;
+$btn-color-hover: #383636;
+
+$btn-bg-primary: #2d31e9;
+$btn-bg-primary-hover: #2d31e9;
+$btn-color-primary: #2d31e9;
+$btn-color-primary-hover: #2d31e9;
+
+
+.btn {
+  font-size: 1rem;
+  color: $btn-color;
+  background: $btn-bg;  
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: $btn-color-hover;
+    background-color: $btn-bg-hover;
+  }
+
+  &-primary {
+    color: $btn-color-primary;
+    background-color: $btn-color-primary;
+    &:hover {
+      color: $btn-color-primary;
+      background-color: $btn-bg-primary-hover;
+    }
+  }
+
+  &-sm {
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+}

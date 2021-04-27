@@ -1,0 +1,79 @@
+$bg-header-hero: #30304d;
+$color-header-hero: white;
+$color-hover-header-hero: blue;
+
+.header {
+  &-hero {
+    background-color: $bg-header-hero;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    li {
+      margin-left: 18px;
+      font-size: 14px;
+      color: $color-header-hero;
+    }
+    a {
+      text-decoration: none;
+      color: $color-header-hero;
+      font-size: 14px;
+      margin-left: 4px;
+      transition: 0.4s;
+      &:hover {
+       color: $color-hover-header-hero;
+      }
+    }
+    .sign-up {
+      margin-left: 16px;
+    }
+
+    .sign-up, .sign-in {
+      font-weight: 600;
+    }
+    .separate {
+      position: relative;
+      display: inline-block;
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 14px;
+        top: -7px;
+        left: 8px;
+        background-color: $color-header-hero;
+      }
+    }
+
+    .user-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 22px;
+      width: 22px;
+      padding: 1px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.4s);
+      }
+
+      & > * {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &-main {
+    height: 80px;
+    background: rgb(216, 216, 216);
+  }
+}

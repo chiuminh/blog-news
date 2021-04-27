@@ -1,0 +1,38 @@
+.form {
+  margin-left: 400px;
+  width: 400px;
+  &-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    &.error {
+      .form-label{
+        color: rgb(204, 45, 45);
+      }
+      input {
+        border: 1px solid rgb(204, 45, 45);
+      }
+    }
+  }
+
+  &-label {
+    color: rgb(44, 44, 44);
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  &-control {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid rgb(104, 104, 104);
+
+    &:focus {
+      border: 1px solid rgba($color: blue, $alpha: 0.8);
+    }
+
+  }
+}
